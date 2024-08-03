@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>DANIEL YONESHIGE JUNIOR</title>
+</head>
+<body>
+    <header id="header">    
+        <h1 id="titulo"><a href="index.html">DY</a></h1>
+        <nav>
+            <div id="container">    
+                <a class="words_header" href="index.html">HOME </a>
+                <a>&#x95;</a>	
+                <a class="words_header" href="about.html">ABOUT </a>
+                <a>&#x95;</a>	
+                <a class="words_header" href="proj.html">PROJECTS</a>
+            </div>
+        </nav>
+            <div class="social-media">
+                <a href="https://github.com/DanyoJr" target="_blank" class="imagem"> <img src="./img/github.png" alt="github"> </a>
+                <a href="https://www.linkedin.com/in/daniel-yoneshige-junior-147363299/" target="_blank" class="imagem"> <img src="./img/linkedin.png" alt="linkedin"> </a>
+                <a href="" class="imagem"> <img src="./img/o-email.png" alt="gmail" onclick="copyEmail('danielyoneshigejunior@gmail.com')"> </a>
+            </div>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="./img/daniel_junior.jpg" alt="foto-pessoal">
+            
+            <div class="description"> 
+                <h1>ABOUT ME</h1>
+                <h3>Hi, my name is Daniel Yoneshige Junior, I am 18 years old, I am a systems analysis and development student who loves learning new things. I am currently a support analyst treinee at Layers Education.</h3>
+            </div>
+        </div>
+     </main> 
+
+</body>
+<script>
+
+function copyEmail(email) {
+    const textarea = document.createElement('textarea');
+    textarea.value = email;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    
+}
+
+</script>
+</html>
