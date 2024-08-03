@@ -1,5 +1,9 @@
 {
-    "rewrites": [
-        {"source": "/:path*", "destination": "./port/index.html"}
+    "version": 2,
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
     ]
   }
